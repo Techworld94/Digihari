@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hari Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.all.min.js"></script>
+</head>
+<body class="dark-mode">
+    <!-- Navbar Design -->
+    <header class="header">
+        <a href="#" class="logo">𝓗𝓐𝓡𝓘</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">contact</a>
+        </nav>
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    
+    <!--Home Section Design-->
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>Harihara Ganesh</h1>
+            <p>Experienced Senior Developer/DevOps professional with <span id="experience-years"></span> years of expertise.
+                Azure certified in Data Engineering and proficient in Azure DevOps and Agile methodologies.</p>
+            <p>Passionate about driving innovation and growth through collaborative problem-solving.</p>
+
+        <div class="social-media">
+            <!--<a href="#"><i class='bx bxl-instagram-alt'></i></a>-->
+            <a href="https://www.linkedin.com/in/harihara-subramanian-ganesh-57ba71166/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://wa.link/lfugjs" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+            <a href="https://github.com/HVtechno/" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.youtube.com/@CodeAICrunchers-jz5uz/" target="_blank"><i class='bx bxl-youtube'></i></a>
+            <!--<a href="#"><i class='bx bxl-facebook'></i></a>-->
+        </div>
+
+            <a href="/static/Resume/Harihara_Ganesh.pdf" download="Harihara_Ganesh.pdf" class="btn" onclick="downloadCV()">Download CV</a>
+        </div>
+        
+        <div class="profession-container">
+            <div class="profession-box">
+                <div class="profession" style="--i:0;">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Senior Developer</h3>
+                </div>
+                <div class="profession" style="--i:1;">
+                    <i class='bx bxl-google-cloud'></i>
+                    <h3>Azure Developer</h3>
+                </div>
+                <div class="profession" style="--i:2;">
+                    <i class='bx bx-data'></i>
+                    <h3>Data Engineer</h3>
+                </div>
+                <div class="profession" style="--i:3;">
+                    <i class='bx bx-palette'></i>
+                    <h3>Solution Arch</h3>
+                </div>
+
+                <div class="circle"></div>
+            </div>
+            <div class="overlay"></div>
+        </div>
+
+        <!-- <div class="home-img">
+            <img src="/static/images/home.png" alt="">
+        </div> -->
+    </section>
+
+    <!-- about section design-->
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="/static/images/intro1.png" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Hi, I'm here to Drive Success in Your Next Project!</h3>
+            <p>With a passion for excellence and a proven track record in software development, DevOps, DataOps, and business intelligence, I bring extensive experience to the table. My expertise extends to Microsoft Azure, where I hold certifications in Data Engineering, Development, and Data Fundamentals.</p>
+            <p class="hidden" id="expand-content">Specializing in Azure DevOps and Agile methodologies, I am well-equipped to design, deploy, and manage sophisticated software systems. My commitment is to collaborate with a dynamic team of professionals, leveraging my technical proficiency, problem-solving skills, and leadership capabilities to fuel innovation and contribute to organizational growth.</p>
+            <a href="#" class="btn" onclick="toggleContent(event)">Read More</a>
+        </div>
+    </section>
+
+    <!--Education Design-->
+
+    <section class="education" id="education">
+        <h2 class="heading">My <span>Journey</span></h2>
+
+        <div class="education-row">
+            <div class="education-column">
+                <h3 class="title">Education</h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calendar"></i> 2017 - 2019</div>
+                            <h3>VSB - Technical University Of Ostrava</h3>
+                            <div class="world"><i class="bx bxs-map"></i> Ostrava, Czech Republic</div>
+                            <p>Between 2017 and 2019, I pursued my Master of Science in Information and Communication Technology at VSB - Technical University of Ostrava, 
+                                engaging in advanced coursework on network security, data communication, software engineering, and emerging technologies.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calendar"></i> 2011 - 2015</div>
+                            <h3>B.S Abdur Rahman University</h3>
+                            <div class="world"><i class="bx bxs-map"></i> Chennai, India</div>
+                            <p>From 2011 to 2015, I was privileged to pursue a Bachelor of Technology in Electronics and Communication Engineering 
+                                at Abdur Rahman University, delving into diverse coursework covering circuit design, digital communication, embedded systems, and signal processing.</p>
+                        </div>
+                    </div>
+
+                    <div class="extra-education" style="display: none;">
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class="bx bxs-calendar"></i> 2009 - 2011</div>
+                                <h3>Sri Sankara Vidyalaya</h3>
+                                <div class="world"><i class="bx bxs-map"></i> Chennai, India</div>
+                                <p>From 2009 to 2011, I completed my higher secondary education at Sri Sankara Vidyalaya, specializing in mathematics, physics, and computer science,
+                                        where I gained a strong academic foundation through challenging coursework.</p>
+                            </div>
+                        </div>
+
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class="bx bxs-calendar"></i> 1997 - 2008</div>
+                                <h3>DTEA Sr.Sec School</h3>
+                                <div class="world"><i class="bx bxs-map"></i> New Delhi, India</div>
+                                <p>From 1997 to 2008, I attended DTEA Sr.Sec School, excelling in mathematics, science, and computer science, 
+                                    building a strong foundation that supported my future academic and professional pursuits.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-column">
+                <h3 class="title">Experience</h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calendar"></i> Jul 2024 - Dec 2024</div>
+                            <h3>Senior Python Data Consultant</h3>
+                            <div class="world"><i class="bx bxs-business"></i> Ebicus B.V <i class="bx bxs-map"></i> Amsterdam, Netherlands</div>
+                            <p>I develop end-to-end data solutions in Azure, automating ETL with Python and Databricks. I optimize workflows with Azure Functions and scalable data architectures. 
+                                I build monitoring tools to enhance data quality and performance. </p>
+                        </div>
+                    </div>
+                    
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calendar"></i> Jul 2024 - Dec 2024</div>
+                            <h3>Senior Azure Data Engineer</h3>
+                            <div class="world"><i class="bx bxs-business"></i> Dynamic People B.V <i class="bx bxs-map"></i> Amsterdam, Netherlands</div>
+                            <p>I design data architectures in Azure, integrating SQL and Synapse pipelines. I deploy Function Apps with C# and Python, building apps and chatbots to optimize data processes. 
+                                I handle efficient data integrations and ETL tasks.</p>
+                        </div>
+                    </div>
+
+                    <div class="extra-experiences" style="display: none;">
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class="bx bxs-calendar"></i> Jul 2021 - Dec 2023</div>
+                                <h3>Senior Full Stack Developer</h3>
+                                <div class="world"><i class="bx bxs-business"></i> Anheuser Busch <i class="bx bxs-map"></i> Prague, Czech Republic</div>
+                                <p>I build and lead full stack web app development, mentor junior talents, and manage Azure deployments. 
+                                    I own Python scripts for data integrations and ETL tasks via Azure Functions in our applications, ensuring seamless processes.</p>
+                            </div>
+                        </div>
+
+                    
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class="bx bxs-calendar"></i> Aug 2019 - Jun 2021</div>
+                                <h3>Senior BI Developer</h3>
+                                <div class="world"><i class="bx bxs-business"></i> Anheuser Busch <i class="bx bxs-map"></i> Prague, Czech Republic</div>
+                                <p>I juggled various responsibilities, including overseeing process automations, 
+                                    robotics process automation, VB/Python automations, as well as engaging in data and predictive analytics 
+                                    and crafting data visualizations.</p>
+                            </div>
+                        </div>
+
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class="bx bxs-calendar"></i> May 2017 - Jul 2019</div>
+                                <h3>Process Specialist</h3>
+                                <div class="world"><i class="bx bxs-business"></i> Infosys <i class="bx bxs-map"></i> Brno, Czech Republic</div>
+                                <p>I acted as a subject matter expert for client solutions, 
+                                    handling trade messages sent to regulatory bodies in the form of FpML and CSV messages 
+                                    via SFTP & MQ channels.</p>
+                            </div>
+                        </div>
+
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class="bx bxs-calendar"></i> Sep 2015 - Jan 2017</div>
+                                <h3>Software Engineer</h3>
+                                <div class="world"><i class="bx bxs-business"></i> Atos <i class="bx bxs-map"></i> Chennai, India</div>
+                                <p>I managed manual and automation testing responsibilities for clients' banking applications, 
+                                    creating business specifications documents and mapping requirements.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="toggle-all-btn" onclick="toggleAll()">Find More</button>
+    </section>
+
+    <!--Skills Section Design-->
+
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Tech Stakes</span></h2>
+
+        <div class="skills-row">
+            <div class="skills-column">
+                <h3 class="title">Coding Skills</h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>Python <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>React js <span>75%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Node js <span>77%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>VB <span>85%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-column">
+                <h3 class="title">Databases Skills</h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>Azure SQL<span>97%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Azure Databricks<span>85%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Oracle <span>75%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>No Sql<span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-column">
+                <h3 class="title">Cloud Skills</h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>Microsoft Azure<span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Google Cloud<span>80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Firebase <span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>AWS<span>20%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-----Projects----->
+
+    <section class="projects" id="projects">
+        <h2 class="heading">My Recent <span>Projects</span></h2>
+    
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-left">
+                    <div class="project-image-wrapper">
+                        <img src="/static/images/projects_1.png" alt="AI-Powered PDF Chatbot">
+                        <div class="project-links">
+                            <a href="https://hivaani-zqhprsnjkq-ez.a.run.app/" class="project-link-livedemo" target="_blank" rel="noopener noreferrer"> Demo</a>
+                            <a href="https://github.com/HVtechno/MLpdf" class="project-link-github" target="_blank" rel="noopener noreferrer"> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-right">
+                    <h3>AI-Powered PDF Chatbot</h3>
+                    <p><strong>Overview:</strong> Interact with PDFs like never before! This AI-driven chatbot helps you summarize and explore content effortlessly.</p>
+                    <p><strong>Tech Stacks Used:</strong></p>
+                    <ul>
+                        <li><strong>Backend:</strong> Python Flask</li>
+                        <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+                        <li><strong>LLM:</strong> Google Gemini Text Embedding Model</li>
+                        <li><strong>Database:</strong> MongoDB</li>
+                        <li><strong>Payment:</strong> Stripe</strong></li>
+                        <li><strong>Deployment:</strong> Google Cloud</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!--Contact Form-->
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form id="contact-form" action="{{ url_for('send_message') }}" method="post">
+            <div class="input-box">
+                <input type="text" name="full_name" placeholder="Full Name">
+                <input type="email" name="email_address" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" name="mobile_number" placeholder="Mobile Number">
+                <input type="text" name="email_subject" placeholder="Email Subject">
+            </div>
+            <textarea name="your_message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- <div class="chatbot-icon" onclick="toggleChatbox()">
+        <i class="fas fa-robot"></i>
+    </div>
+
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="chatbox__image--header">
+                <img src="https://img.icons8.com/color/48/000000/circled-user-male-skin-type-5--v1.png" alt="image">
+            </div>
+            <div class="chatbox__content--header">
+                <h4 class="chatbox__heading--header">Chat support</h4>
+                <p class="chatbox__description--header">Hello, I'm Harvi, Hari's BOT assistant. How may I assist you?</p>
+            </div>
+            <span class="close" onclick="toggleChatbox()">&times;</span>
+        </div>
+        <div id="chat-display" class="chat-content"></div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div> -->
+
+    <!--Toast Messages-->
+
+    <div id="toast-container" class="toast-top-right"></div>
+
+    <!--Footer Design-->
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by CodeAICrunchers | All Rights Reserved</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <!--custom.js-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
